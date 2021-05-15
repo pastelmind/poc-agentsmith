@@ -1,0 +1,3 @@
+The copies were created with:
+
+$ find ../../kolmafia-test/relay/ ../../kolmafia-test/relay/ -type f -printf %f\\n | xargs -I '{}' cp -fv agentsmith.txt 'release/relay/agentsmith_jail/{}'
