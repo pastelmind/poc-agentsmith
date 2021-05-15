@@ -8,7 +8,7 @@ When installed with the `svn checkout` command, this project will overwrite nume
 
 ## How to test
 
-1. ⚠ **Back up your KoLmafia directory.** Copy it somewhere safe, so you can restore it afterwards. You have been warned.
+1. :warning: **Back up your KoLmafia directory.** Copy it somewhere safe, so you can restore it afterwards. You have been warned.
 2. Run `svn checkout https://github.com/pastelmind/poc-agentsmith/trunk/release`
 3. If you see a massive popup asking "Svn checkout wants to overwrite local files", click "Yes". After all, all the files are in `relay/agentsmith_jail/`. Surely, they can't do anything.\
    Note: If the popup is too large, you may not see the buttons. In this case, just hit the <kbd>Enter</kbd> key.
