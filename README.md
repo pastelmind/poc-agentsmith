@@ -16,9 +16,9 @@ When installed with the `svn checkout` command, this project will overwrite nume
 
 ## How does this work?
 
-Whenever installing a new project with `svn checkout`, KoLmafia examines each file to decide how and where it should be placed. If the file being installed is under `relay/` or `scripts/`, it dives into your current `relay/` and `scripts/` directories, searching for a file with the same name. If a match is found, it decides that the two files are the same, and overwrites the existing one with the new one, _even if the actual paths are different._
+Whenever installing a new project with `svn checkout`, KoLmafia examines each file to decide how and where it should be placed. If the file being installed is under `relay/` or `scripts/`, it dives recursively into your current `relay/` and `scripts/` directories, searching for a file with the same name. If a match is found, it decides that the two files are the same, and overwrites the existing one with the new one, _even if the actual paths are different._
 
-## Why does KoLmafia does this?
+## Why does KoLmafia do this?
 
 The exact details are lost to the sands of time, but I believe that it is there to allow users to move their scripts around (to better organize the Script Menu) _and_ still receive automatic updates via `svn update`. Since it compares file names, the automatic update would no longer work once you rename a script.
 
